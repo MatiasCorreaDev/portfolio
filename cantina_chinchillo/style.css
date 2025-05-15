@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+#gps {
+    width: 1.2rem;
+}
+
+#logoaniv {
+    width: 250px;
+}
+
+.bi-zoom-in .bi-fork-knife .bi-journal-check .bi-geo-alt .bi-caret-right .bi-telephone-outbound .bi-calendar-week .bi-instagram {
+    font-size: 24px;
+}
+
+
+#italy {
+    width: 180px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/fondobueno.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.descuento {
+    width: 100%;
+    background-color: beige;
+    color: rgb(42, 76, 126);
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+
+    flex-direction: row;
+    background-color: rgba(0, 135, 141);
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 3px;
+    flex-wrap: wrap;
+    margin-top: -5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav>a {
+    text-decoration: none;
+    color: beige;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace
+}
+
+nav>a:hover {
+    scale: 110%;
+}
+
+
+header {
+    background-color: rgba(245, 245, 220, 0.712);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+
+}
+
+.fotoheader {
+    width: 15%;
+}
+
+.contenedorfotos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    width: 290px;
+    height: 380px;
+    border-radius: 15px;
+}
+
+.fotos:hover {
+    scale: 110%;
+    transition: 1s;
+}
+
+h1 {
+    color: rgb(209, 6, 6);
+    font-size: 120px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    margin: 0px;
+    margin-bottom: -15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: rgba(0, 135, 141);
+    font-size: 36px;
+
+}
+
+h3 {
+    color: rgb(0, 146, 70);
+    font-size: 70px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 800px;
+    font-style: normal;
+    margin-top: 0px;
+    margin-bottom: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+h4 {
+    text-align: right;
+    font-size: xx-large;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 52px;
+    right: 35px;
+
+}
+
+.quienessomos {
+    width: 80%;
+    gap: 5px;
+    display: flex;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(255, 217, 0, 0.226);
+}
+
+.quienes1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienes2 {
+    width: 60%;
+    padding: 5px;
+}
+
+.donde1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.donde2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dondeestamos {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 5px;
+    padding: 50px;
+    background-color: rgba(255, 217, 0, 0.226);
+    flex-direction: row-reverse;
+    background-color: rgba(192, 192, 192, 0.226);
+}
+
+p,
+blockquote,
+em,
+cite {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+/* contador de visitas */
+aside {
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 2px;
+    right: 35px;
+}
+
+aside>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(83, 4, 83, 0.747);
+    color: beige;
+    font-size: xx-large;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
+}
+
+aside:hover{
+    display: none;
+}
+
+/* tarjetas de especialidades */
+#espetitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.especialidades {
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    margin: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card-container {
+    perspective: 1000px;
+    width: 280px;
+    height: 360px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #dbbc34;
+
+}
+
+.texttarjeta {
+    font-size: xx-large;
+    color: beige;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 135, 141);
+    display: flex;
+    justify-content: space-evenly;
+    color: beige;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+
+.footercontent {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.footercontent>a {
+    text-decoration: none;
+    color: beige;
+    margin-top: 15px;
+    font-size: x-large;
+}
+
+#instagram {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+
+
+@media screen and (width<1450px) {
+    .fotoheader {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    h4 {
+        display: none;
+    }
+    .footercontent>a {
+    font-size: large;
+}
+
+}
+
+
+
+.textoregreso {
+    position: fixed;
+    top: 15%;
+    left: 15px;
+    border-radius: 50%;
+    background: #082359;
+    background: radial-gradient(circle, rgba(8, 35, 89, 1) 22%, rgba(148, 187, 233, 1) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid rgb(187, 187, 209);
+    .volver{text-indent: 0;
+    font-size: medium;
+color: white;}
+}
+
+.textoregreso:hover{
+    scale: 120%;
+    transition: 1s;
+}

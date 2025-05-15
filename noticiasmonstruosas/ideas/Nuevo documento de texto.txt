@@ -1,0 +1,44 @@
+https://www.hellofriki.com/
+
+https://frikoteca.blogspot.com/2021/01/blogs-roleros-diario-de-un-friki-desde.html
+
+https://www.muyinteresante.com/tecnologia/1681.html
+
+https://es.vecteezy.com/miembros/irish_solo/uploads
+
+https://sportstar.thehindu.com/magazine/world-no-1-grandmaster-magnus-carlsen-chess-viswanathan-anand-blitz/article30329100.ece
+
+
+
+¡Enhorabuena! ¡Te han contratado en el semanario 'Noticias monstruosas', y tú serás el encargado/a de maquetar la edición de su 30 aniversario! Como quieren darle un aspecto vintage, te dicen que se maquetará en HTML. Te han fichado sabiendo que tú eres un especialista en ese lenguaje.
+
+A partir de las reuniones con el equipo creativo y la dirección, se han generado una serie de documentos técnicos en los que se establece que es necesario elaborar:
+
+- Un menú principal con los siguientes apartados: 
+Portada | Personajes frikis | Inventos alucinantes | Monstruos de temporada | Contacto
+
+No es necesario realizar diferentes páginas, se puede hacer la opción de usar anclajes con ids.
+
+Te piden que incluyas como mínimo los siguientes elementos en cada sección:
+o En la portada: 
+· Cabecera 
+· Noticia principal 
+· Personaje friki del año. 
+· Footer con publicidad
+
+o En la sección de personajes frikis: 
+· ¡Muestra al menos tres de los personajes más extravagantes descubiertos este año!
+
+o En la sección de Inventos alucinantes: 
+· ¡Descubre por tus lectores las últimas tonterías tecnológicas!
+
+o En la sección de Monstruos de temporada: 
+· ¡Los últimos monstruos documentados en los últimos meses en todo el mundo!
+
+o Al contacto: 
+· Quiénes somos, dónde vamos, de dónde venimos... 
+· Ubicación 
+· Teléfono, whatsapp, redes sociales... 
+· E-mail de la redacción
+
+Trabajo para ir realizando en algunos días e ir incorporando los nuevos aprendizajes sobre CSS.
