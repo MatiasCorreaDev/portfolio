@@ -364,7 +364,7 @@ a {
 .contenedorimgproyecto {
   width: 800px;
   height: 400px;
-  background-color: #eefdfc;
+  background-color: black;
   background-size: cover;
   border-radius: 5px;
   border: 2px solid #1f505a;
@@ -377,15 +377,15 @@ a {
 /*  imgs de cada backgrounds  */
 
 #proyectococo {
-  background-image: url(img/proyectococo.png);
+  background-image: url(img/proyectococo.webp);
 }
 
 #cantinachichilo {
-  background-image: url(img/cantinachichilo.jpg);
+  background-image: url(img/cantinachichilo.webp);
 }
 
 #noticiasmonstruosas {
-  background-image: url(img/noticiasmonstruosas.jpg);
+  background-image: url(img/noticiasmonstruosas.webp);
 }
 
 #animacion_pixar,
@@ -522,6 +522,14 @@ li>a:hover {
     padding-top: 0;
   }
 
+  .contenedorimgproyecto{
+    width: 298px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+  }
   .textoproyectos {
     width: 90%;
     background-color: #1f505a00;
@@ -550,7 +558,7 @@ li>a:hover {
   .contenedorimgproyecto {
     width: 90%;
     height: 150px;
-    background-color: #eefdfc;
+    background-color: black;
     background-size: contain;
     border-radius: 5px;
     border: 0;
