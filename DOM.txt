@@ -1,0 +1,70 @@
+html
+├── head
+│   ├── meta (charset)
+│   ├── meta (viewport)
+│   ├── title
+│   ├── link (Font Awesome CSS)
+│   └── link (styles.css)
+└── body
+    ├── nav.navbar
+    │   ├── div.logo
+    │   │   └── a
+    │   ├── ul.nav-links
+    │   │   ├── li
+    │   │   │   └── a (Home)
+    │   │   ├── li
+    │   │   │   └── a (About)
+    │   │   ├── li
+    │   │   │   └── a (Services)
+    │   │   ├── li
+    │   │   │   └── a (Portfolio)
+    │   │   └── li
+    │   │       └── a (Contact)
+    │   └── div.hamburger
+    │       └── i.fas.fa-bars
+    ├── section#home.hero
+    │   ├── div.hero-content
+    │   │   ├── h1
+    │   │   ├── p
+    │   │   └── a.btn
+    ├── section#about.section
+    │   ├── h2
+    │   └── p
+    ├── section#services.section
+    │   ├── h2
+    │   └── div.services-container
+    │       ├── div.service-card
+    │       │   ├── h3
+    │       │   └── p
+    │       ├── div.service-card
+    │       │   ├── h3
+    │       │   └── p
+    │       └── div.service-card
+    │           ├── h3
+    │           └── p
+    ├── section#portfolio.section
+    │   ├── h2
+    │   └── div.portfolio-container
+    │       ├── div.project-card
+    │       │   ├── h3
+    │       │   ├── p
+    │       │   └── a.btn
+    │       └── div.project-card
+    │           ├── h3
+    │           ├── p
+    │           └── a.btn
+    ├── section#contact.section
+    │   ├── h2
+    │   ├── form.contact-form
+    │   │   ├── input (text)
+    │   │   ├── input (email)
+    │   │   ├── textarea
+    │   │   └── button.btn
+    │   └── div.social-links
+    │       ├── a
+    │       │   └── i.fab.fa-github
+    │       └── a
+    │           └── i.fab.fa-linkedin
+    ├── footer
+    │   └── p
+    └── script (script.js)

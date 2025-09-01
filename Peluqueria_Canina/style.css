@@ -1,0 +1,926 @@
+@charset "UTF-8";
+/* ?Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+@font-face {
+  font-family: trifelia;
+  src: url(Recursos/fuentes/Trifelia.otf) format("opentype");
+}
+@font-face {
+  font-family: anandaBlackPersonalUse;
+  src: url(Recursos/fuentes/Ananda\ Black\ Personal\ Use.ttf) format("truetype");
+}
+@font-face {
+  font-family: anandaPersonalUse;
+  src: url(Recursos/fuentes/Ananda\ Personal\ Use.ttf) format("truetype");
+}
+/* *Fuente Nav */
+/* *Fuente Bienvenida */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6E9E0;
+}
+body header {
+  background-color: rgba(246, 233, 224, 0);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 5px;
+  transition: all 0.5s ease-out;
+  /* para darle efecto blur cuando hagamos la posicion sticky  */
+}
+body header.scrolling {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-bottom: 1px solid #DFA4A3;
+  background: linear-gradient(to bottom, rgba(138, 128, 128, 0.3647058824), rgba(138, 128, 128, 0.3647058824)), center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body header .logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  min-width: 200px;
+  height: 100%;
+  margin-left: 10%;
+  padding: 5px;
+  text-decoration: none;
+}
+body header .logo-link .logo {
+  width: 100%;
+  height: 100%;
+  background: url(Recursos/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
+  background-size: contain;
+}
+body header nav.menu-horizontal {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+body header nav.menu-horizontal ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+body header nav.menu-horizontal ul li {
+  margin: 0 20px;
+  font-size: 200%;
+  text-decoration: none;
+}
+body header nav.menu-horizontal ul li a {
+  color: #c3f0ca;
+  text-decoration: none;
+  font-family: "trifelia", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body header nav.menu-horizontal ul li a:hover {
+  color: #30547B;
+  text-shadow: 0 4px 4px rgba(48, 84, 123, 0.3254901961);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+body header #toggleMenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+body header nav.menu-hamburguesa {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(223, 164, 163, 0.7529411765);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-bottom: 2px solid #DFA4A3;
+  z-index: 1000;
+}
+body header nav.menu-hamburguesa ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  list-style: none;
+  padding: 5px 15px;
+  margin: 0;
+  width: 100%;
+}
+body header nav.menu-hamburguesa ul li {
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+body header nav.menu-hamburguesa ul li a {
+  color: #33272a;
+  text-decoration: none;
+  font-family: "trifelia", serif;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  font-weight: 500;
+  font-style: normal;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+body header nav.menu-hamburguesa.activa {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 2000;
+  margin: 0;
+}
+body main {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+body main section#bienvenida {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  /* *solo imagen de fondo de Bienvenida */
+  background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section#bienvenida article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 130px;
+  color: beige;
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+body main section#bienvenida h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "trifelia", serif;
+  color: #DFA4A3;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 5px;
+}
+body main section#bienvenida h1 span {
+  font-family: "anandapersonaluse", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  color: beige;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body main section#bienvenida h3 {
+  font-size: 1.5rem;
+  margin-top: -10px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: beige;
+  font-style: italic;
+}
+body main section#bienvenida p {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  line-height: 1.2;
+  max-width: 800px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fffffe;
+}
+body main section#bienvenida p a {
+  color: #c3f0ca;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+}
+body main section#bienvenida p a:hover {
+  color: #30547B;
+  text-shadow: 0 4px 4px rgba(48, 84, 123, 0.3254901961);
+}
+body main section#bienvenida #eslogan {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: beige;
+  font-style: italic;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+body main .section-servicios {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/conjunto-de-comida-para-perros-y-cuello-removebg-preview.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main .section-servicios h2 {
+  font-family: "trifelia", serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: #30547B;
+  text-align: center;
+  padding: 20px 15px 0px 15px;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  margin-bottom: 20px;
+}
+body main .section-servicios article#servicios {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 10px 10px;
+  padding: 10px 20px;
+  margin: 0 auto 15px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main .section-servicios article#servicios .contenedor-servicios {
+  perspective: 1000px;
+  width: 250px;
+  height: 200px;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta.girada {
+  transform: rotateY(180deg);
+  border: 2px solid #30547B;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(48, 84, 123, 0.3254901961);
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transition: transform 0.8s;
+  cursor: pointer;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-frente,
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+  border: 1px solid black;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-frente img,
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-frente {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 5px;
+  justify-content: center;
+  border: inset solid #000000;
+  background: linear-gradient(to top, rgba(5, 5, 5, 0.7960784314), #ffbecf), url(Recursos/imagenes/job562-nunoon-10-removebg-preview.png) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-frente h4 {
+  font-family: "domine", serif;
+  font-size: 1.5rem;
+  color: #f5f6f7;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 4px #525050;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-frente p {
+  font-family: "domine", serif;
+  font-size: 1rem;
+  color: #ffbecf;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(to bottom, rgba(59, 54, 54, 0.4509803922), rgba(59, 54, 54, 0.4509803922)), url(Recursos/imagenes/45.webp) no-repeat center center;
+  background-size: cover;
+}
+body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back p {
+  font-family: "domine", serif;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+body main section#sobre-nosotros {
+  height: auto;
+  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/terry.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main section#sobre-nosotros h2 {
+  font-family: "trifelia", serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: #30547B;
+  text-align: center;
+  padding: 20px 15px 20px 15px;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+}
+body main section#sobre-nosotros article {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space;
+  text-align: center;
+  gap: 50px;
+  padding: 20px 100px;
+  background-attachment: fixed;
+}
+body main section#sobre-nosotros article p {
+  font-family: "Domine", serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #33272a;
+  text-align: justify;
+  padding: 0 40px;
+  flex: 1;
+}
+body main section#sobre-nosotros article blockquote {
+  font-family: "Domine", cursive;
+  font-size: 2.2rem;
+  color: #33272a;
+  font-style: italic;
+  border-left: 4px solid #dfa4a3;
+  border-right: 4px solid #dfa4a3;
+  padding: 0 10px;
+  text-align: center;
+  max-width: 600px;
+  /* límite en desktop */
+  width: 100%;
+  /* ocupa todo el espacio disponible en responsive */
+  margin: auto auto;
+  /* lo mantiene centrado */
+}
+body main section#galeria {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 0;
+}
+body main section#galeria h2 {
+  font-family: "trifelia", serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: #30547B;
+  text-align: center;
+  padding: 20px 15px 0px 15px;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  margin-bottom: 20px;
+}
+body main section#galeria .galeria-grid {
+  width: 90%;
+  height: 800px;
+  display: grid;
+  margin: 40px auto 40px auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+body main section#galeria .galeria-grid div {
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(195, 240, 202, 0.3098039216);
+}
+body main section#galeria .galeria-grid div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+body main section#galeria .galeria-grid div p {
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+  color: beige;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.631372549);
+  padding: 10px;
+  border-radius: 12px;
+  bottom: 0;
+  width: 100%;
+  display: none;
+  height: 100%;
+}
+body main section#galeria .galeria-grid div:hover p {
+  display: block;
+}
+body main section#galeria .galeria-grid .foto1 {
+  grid-column: span 2/span 2;
+  grid-row: span 3/span 3;
+  background: url(Recursos/imagenes/45.webp) no-repeat center center;
+  background-size: cover;
+}
+body main section#galeria .galeria-grid .foto2 {
+  grid-row: span 2/span 2;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  background-size: contain;
+  background: url(Recursos/imagenes/1.jpg) no-repeat center center;
+}
+body main section#galeria .galeria-grid .foto3 {
+  grid-column: span 2/span 2;
+  grid-row: span 3/span 3;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  background: url(Recursos/imagenes/3.jpg) no-repeat top center;
+  background-size: cover;
+}
+body main section#galeria .galeria-grid .foto4 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 1;
+  background: url(Recursos/imagenes/6.jpg) no-repeat top center;
+  background-size: cover;
+}
+body main section#galeria .galeria-grid .foto5 {
+  grid-column: span 2/span 2;
+  grid-row: span 2/span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  background: url(Recursos/imagenes/2.jpg) no-repeat top center;
+  background-size: cover;
+}
+body main section#galeria .galeria-grid .foto6 {
+  grid-row: span 2/span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  background: url(Recursos/imagenes/5.jpg) no-repeat top center;
+  background-size: cover;
+}
+body main section#galeria .galeria-grid .foto7 {
+  grid-row: span 3/span 3;
+  grid-column-start: 5;
+  grid-row-start: 3;
+  background: url(Recursos/imagenes/7.jpg) no-repeat center center;
+  background-size: cover;
+}
+body main section#contacto {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, transparent, rgba(245, 245, 220, 0.555)), url(Recursos/imagenes/lindo-concepto-naturaleza-muerta-accesorios-mascotas.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main section#contacto h2 {
+  font-family: "trifelia", serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: #30547B;
+  text-align: center;
+  padding: 20px 15px 0px 15px;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  margin-bottom: 20px;
+}
+body main section#contacto div.contenedor-columnas-contacto {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+body main section#contacto div.contenedor-columnas-contacto aside.izquierda-horarios {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+body main section#contacto div.contenedor-columnas-contacto aside.izquierda-horarios p {
+  font-family: "Domine", serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #33272a;
+  text-align: center;
+  padding: 0 40px;
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(195, 240, 202, 0.6784313725);
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto .canales {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* importante para que el pseudo-elemento no se salga */
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto .canales::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* color de fondo real */
+  z-index: 0;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto .canales:hover::before {
+  background-color: #dfa4a3;
+  filter: blur(10px);
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto .canales > * {
+  position: relative;
+  z-index: 1;
+  /* asegura que los iconos estén por encima del fondo */
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto img {
+  width: 60%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: filter 0.3s ease;
+}
+body main section#contacto div.contenedor-columnas-contacto .canales-contacto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body main section#contacto div.contenedor-columnas-contacto aside.derecha-ubicacion {
+  width: 33%;
+}
+body main section#contacto div.contenedor-columnas-contacto aside.derecha-ubicacion iframe {
+  display: block;
+  margin: 40px auto;
+  width: 80%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+body main form {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(195, 240, 202, 0.3098039216);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+body main form h2 {
+  font-family: "trifelia", serif;
+  font-size: 5em;
+  font-weight: 400;
+  color: #30547B;
+  text-align: center;
+  padding: 20px 15px 0px 15px;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  margin-bottom: 20px;
+}
+body main form label {
+  font-family: "Domine", serif;
+  font-size: 1.2rem;
+  color: #33272a;
+  margin-bottom: 5px;
+}
+body main form input,
+body main form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Domine", serif;
+  font-size: 1rem;
+  resize: vertical;
+  field-sizing: content;
+}
+body main form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #30547B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "Domine", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+body main form button:hover {
+  background-color: #dfa4a3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+body main section#publicaciones-instagram {
+  display: flex;
+  justify-content: center;
+}
+body footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(223, 164, 163, 0.2274509804);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  border-top: 2px solid #dfa4a3;
+  box-shadow: 0 -4px 12px rgba(48, 84, 123, 0.3254901961);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5215686275), rgba(255, 255, 255, 0.5215686275)), url("Recursos/imagenes/patron-aseo-mascotas-dibujado-mano.png") center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body footer header.encabezado-footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+body footer header.encabezado-footer .logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  min-width: 200px;
+  height: 100%;
+  margin-left: 10%;
+  padding: 5px;
+  text-decoration: none;
+}
+body footer header.encabezado-footer .logo-link .logo {
+  width: 100%;
+  height: 100%;
+  background: url(Recursos/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
+  background-size: contain;
+}
+body footer header.encabezado-footer nav {
+  width: auto;
+  height: auto;
+}
+body footer header.encabezado-footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+body footer header.encabezado-footer nav ul li {
+  list-style: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+body footer header.encabezado-footer nav ul li a img {
+  width: 50%;
+}
+body footer header.encabezado-footer nav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* color de fondo real */
+  z-index: 0;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+}
+body footer header.encabezado-footer nav ul li:hover::before {
+  background-color: #dfa4a3;
+  filter: blur(10px);
+}
+body footer header.encabezado-footer nav ul li > * {
+  position: relative;
+  z-index: 1;
+  /* asegura que los iconos estén por encima del fondo */
+}
+body footer div.contenido-footer {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  margin: auto;
+}
+body footer div.contenido-footer ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+body footer div.contenido-footer ul li {
+  margin: 0 20px;
+  text-decoration: none;
+}
+body footer div.contenido-footer ul li a {
+  color: #33272a;
+  text-decoration: none;
+  font-family: "trifelia", serif;
+  text-shadow: 2px 2px 4px rgba(114, 83, 42, 0.5);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body footer div.contenido-footer ul li a:hover {
+  color: #30547B;
+  text-shadow: 0 4px 4px rgba(48, 84, 123, 0.3254901961);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+body footer p {
+  margin: 0;
+  font-family: "Domine", serif;
+  font-size: 1.6rem;
+  color: #33272a;
+}
+
+@media screen and (max-width: 860px) {
+  body header {
+    flex-direction: column;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  body header .logo {
+    width: 100%;
+    margin-left: 0;
+  }
+  body main section#bienvenida h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  body main section#bienvenida h1 span {
+    font-size: 4rem;
+  }
+  body header nav.menu-horizontal {
+    display: none;
+  }
+  body header #toggleMenu {
+    display: block;
+  }
+  body main section.section-servicios article#servicios {
+    padding: 10px;
+    gap: 5px;
+    justify-content: center;
+  }
+  body main section.section-servicios article#servicios .contenedor-servicios {
+    width: 100%;
+    width: calc(50% - 10px);
+    /* Dos tarjetas por fila con espacio entre ellas */
+    height: auto;
+    max-width: none;
+  }
+  body main section.section-servicios article#servicios .contenedor-servicios .tarjeta {
+    width: 100%;
+    height: 250px;
+  }
+  body main section.section-servicios article#servicios .contenedor-servicios .tarjeta-frente,
+  body main section.section-servicios article#servicios .contenedor-servicios .tarjeta-back {
+    height: 100%;
+  }
+  body main section#sobre-nosotros article {
+    padding: 5px;
+    gap: 30px;
+    flex-direction: column;
+  }
+  body main section#sobre-nosotros article p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  body main section#sobre-nosotros article blockquote {
+    font-size: 2rem;
+  }
+  body main section#galeria .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    height: auto;
+    gap: 5px;
+  }
+  body main section#galeria .galeria-grid div {
+    height: 200px;
+  }
+  body main section#galeria .galeria-grid .foto1 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  body main section#galeria .galeria-grid .foto2 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+  body main section#galeria .galeria-grid .foto3 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 7;
+  }
+  body main section#galeria .galeria-grid .foto4 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 10;
+  }
+  body main section#galeria .galeria-grid .foto5 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 13;
+  }
+  body main section#galeria .galeria-grid .foto6 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 16;
+  }
+  body main section#galeria .galeria-grid .foto7 {
+    grid-column: span 2/span 2;
+    grid-row: span 3/span 3;
+    grid-column-start: 1;
+    grid-row-start: 19;
+  }
+  body main section#contacto div.contenedor-columnas-contacto {
+    flex-direction: column;
+  }
+  body main section#contacto div.contenedor-columnas-contacto aside.izquierda-horarios {
+    width: 100%;
+    align-items: center;
+  }
+  body main section#contacto div.contenedor-columnas-contacto aside.derecha-ubicacion {
+    width: 100%;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
