@@ -398,11 +398,13 @@ a {
   background-image: url(img/noticiasmonstruosas.webp);
 }
 
-#proyectopeluqueria{
+#proyectopeluqueria {
   background-image: url(img/peluqueria_canina.jpg);
 }
+
 #animacion_pixar,
-#noticias_monstruosas {
+#noticias_monstruosas,
+#proyectopeluqueria {
   flex-direction: row-reverse;
 }
 
@@ -546,11 +548,11 @@ li>a:hover {
   }
 
   a.fotolink {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-}
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+  }
 
   .textoproyectos {
     width: 90%;
@@ -692,7 +694,7 @@ li>a:hover {
     margin-bottom: 40px;
   }
 
-   a.fotolink {
+  a.fotolink {
     width: 100%;
     height: auto;
   }
