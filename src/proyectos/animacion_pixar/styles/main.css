@@ -1,0 +1,299 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-image: url(img/coco16x9.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1889px;
+    height: 870px;
+
+}
+
+footer {
+    width: 100%;
+    height: 15%;
+}
+
+marquee {
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: xx-large;
+    animation: marquee 9s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    text-shadow: 15px 15px 15px rgba(255, 255, 255, 0.589);
+    padding: 5px;
+}
+
+.logomarquee {
+    position: relative;
+    width: 40px;
+    margin-top: -15px;
+}
+
+
+#cocologo {
+    scale: 50%;
+    position: relative;
+    animation: movimientologo 7s 1;
+    animation-direction: alternate;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+.divcartel {
+    width: 350px;
+    height: 255px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(img/cartel.png);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    animation: cartel 6s 1;
+    animation-delay: 4s;
+    opacity: 0;
+    margin-top: 500px;
+}
+
+#textocartel {
+    text-align: center;
+    margin-top: 45px;
+
+}
+
+#cocofamily {
+    position: absolute;
+    opacity: 0;
+    top: 420px;
+    left: 720px;
+    scale: 140%;
+    animation: cocofamily 7s 1;
+    animation-delay: 3s;
+}
+
+#intro {
+    width: 1889px;
+    height: 870px;
+    animation: intro 6s 1;
+    position: absolute;
+    animation-fill-mode: forwards;
+
+}
+
+#precoco2 {
+    width: 1889px;
+    height: 870px;
+    animation: precoco2 6s 1;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-delay: 10s;
+    opacity: 0;
+}
+
+#coco2logo {
+    scale: 70%;
+    position: absolute;
+    animation: coco2logo 4s 1;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+
+
+@keyframes intro {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+@keyframes introbanner {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes movimientologo {
+    0% {
+        top: -100px;
+        left: 180px;
+        opacity: 0;
+        scale: 15%;
+    }
+
+    33% {
+        top: -100px;
+        left: 180px;
+        opacity: 1;
+        scale: 35%;
+
+    }
+
+    75% {
+        top: -100px;
+        left: 180px;
+        opacity: 1;
+        scale: 35%;
+
+    }
+
+    100% {
+        top: -100px;
+        left: 180px;
+        opacity: 0;
+        scale: 0%;
+    }
+}
+
+
+@keyframes precoco2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes coco2logo {
+    from {
+        top: 300px;
+        left: -15px;
+        opacity: 0;
+        scale: 15%;
+    }
+
+    to {
+        top: 350px;
+        left: 490px;
+        opacity: 1;
+        scale: 70%;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        color: rgb(233, 67, 2);
+    }
+
+    33% {
+        color: rgb(177, 166, 10);
+    }
+
+    66% {
+        color: rgb(221, 104, 168);
+    }
+
+    100% {
+        color: rgb(7, 150, 233);
+    }
+}
+
+@keyframes cartel {
+    0% {
+        opacity: 1;
+        top: -600px;
+        left: 120px;
+        transform: rotate(0deg);
+    }
+
+    15% {
+        opacity: 1;
+        top: -250px;
+        left: 120px;
+        transform: rotate(-30deg);
+    }
+
+    30% {
+        opacity: 1;
+        top: -250px;
+        left: 120px;
+        transform: rotate(20deg);
+    }
+
+    45% {
+        opacity: 1;
+        top: -250px;
+        left: 120px;
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        opacity: 1;
+        top: -250px;
+        left: 120px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        top: -250px;
+        left: 120px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes cocofamily {
+    0% {
+        opacity: 0;
+        scale: 40%;
+    }
+
+    75% {
+        opacity: 1;
+        scale: 140%;
+    }
+    100% {
+        opacity: 0;
+        scale: 40%;
+    }
+}
+
+
+
+.textoregreso {
+    position: fixed;
+    top: 15%;
+    left: 15px;
+    border-radius: 50%;
+    background: #082359;
+    background: radial-gradient(circle, rgba(8, 35, 89, 1) 22%, rgba(148, 187, 233, 1) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 2px solid rgb(187, 187, 209);
+    .volver{text-indent: 0;
+    font-size: medium;
+color: white;}
+}
+
+.textoregreso:hover{
+    scale: 120%;
+    transition: 1s;
+}

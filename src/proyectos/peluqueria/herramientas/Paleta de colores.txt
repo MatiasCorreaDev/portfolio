@@ -1,0 +1,16 @@
+https://www.happyhues.co/palettes/15
+
+elements
+background  #faeee7
+paragraph #594a4e
+button text #33272a
+headline #33272a
+button #ff8ba7
+
+
+illustration
+stroke #33272a
+highlight #ff8ba7
+tertiary #c3f0ca
+main #fffffe
+secondary #ffc6c7

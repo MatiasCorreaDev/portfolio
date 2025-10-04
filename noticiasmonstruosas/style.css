@@ -6,7 +6,7 @@
 
 
 body {
-    background-image: url(img/maderaclara.jpg);
+    background-image: url(../src/assets/img/noticiasmonstruosas/maderaclara.jpg);
     padding: 0;
     margin: 0;
 
@@ -77,7 +77,7 @@ header {
     justify-content: center;
     height: 200px;
     background-color: rgba(236, 236, 170, 0.295);
-    background-image: url(img/backoscuro.png);
+    background-image: url(../src/assets/img/noticiasmonstruosas/backoscuro.png);
     background-size: cover;
     background-position: 0px 25%;
 }
@@ -112,7 +112,7 @@ h1 {
 
 .linea {
     height: 4px;
-    background-image: url(img/backgroundh1.jpg);
+    background-image: url(../src/assets/img/noticiasmonstruosas/backgroundh1.jpg);
 }
 
 .fresh {
@@ -187,7 +187,7 @@ article {
 }
 
 #cuchara {
-    background-image: url(img/cuchara.avif);
+    background-image: url(../src/assets/img/noticiasmonstruosas/cuchara.avif);
     background-size: cover;
 }
 
@@ -205,7 +205,7 @@ article {
 }
 
 #sheldon {
-    background-image: url(img/sheldon.webp);
+    background-image: url(../src/assets/img/noticiasmonstruosas/sheldon.webp);
     background-size: cover;
     background-position: center;
     width: 35%;
@@ -229,7 +229,7 @@ article {
 }
 
 #demogorgon {
-    background-image: url(img/demogorgon.webp);
+    background-image: url(../src/assets/img/noticiasmonstruosas/demogorgon.webp);
     background-size: cover;
     background-position: center;
 }
@@ -306,7 +306,7 @@ p {
 
 .tarjetascontenido {
     background-color: rgba(58, 10, 10, 0.678);
-    background-image: url(img/greysmoke.jpg);
+    background-image: url(../src/assets/img/noticiasmonstruosas/greysmoke.jpg);
     background-size: cover;
     display: block;
     padding: 5px;

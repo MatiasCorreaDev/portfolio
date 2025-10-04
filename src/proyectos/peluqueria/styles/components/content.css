@@ -1,0 +1,204 @@
+/* ?Fuentes */
+/* *Fuente Nav */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+/* *Fuente Bienvenida */
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6E9E0;
+}
+body header {
+  background-color: rgba(223, 164, 163, 0.2274509804);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  z-index: 1000;
+  padding: 5px;
+  /* para darle efecto blur cuando hagamos la posicion sticky  */
+}
+body header nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+}
+body header nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+body header nav ul li {
+  margin: 0 20px;
+  font-size: 200%;
+  text-decoration: none;
+}
+body header nav ul li a {
+  color: #33272a;
+  text-decoration: none;
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+body header nav ul li a:hover {
+  color: #30547B;
+  text-shadow: 0 4px 4px rgba(48, 84, 123, 0.3254901961);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+body header div.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  background: url(Recursos/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center rgba(223, 164, 163, 0.2274509804);
+  background-size: contain;
+  border-radius: 12px;
+  margin-left: 10%;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(48, 84, 123, 0.3254901961);
+  border: 2px solid #dfa4a3;
+}
+body header div.logo:hover {
+  scale: 1.01;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+main section#bienvenida {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  /* *solo imagen de fondo de Bienvenida */
+  background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
+  background-size: cover;
+}
+main section#bienvenida article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 50px;
+  color: beige;
+  font-family: "Domine", serif;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.568);
+}
+main section#bienvenida h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "domine", serif;
+  color: beige;
+  font-weight: 700;
+}
+main section#bienvenida h1 span {
+  font-family: "hurricane", cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 11.7vh;
+  color: beige;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main section#bienvenida h3 {
+  font-size: 1.5rem;
+  margin-top: -20px;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: beige;
+  font-style: italic;
+}
+main section#bienvenida p {
+  margin: 20px 0;
+  font-size: 2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: justify;
+  color: #fffffe;
+}
+main section#bienvenida p a {
+  color: #c3f0ca;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+main section#bienvenida p a:hover {
+  color: #30547B;
+  text-shadow: 0 4px 4px rgba(48, 84, 123, 0.3254901961);
+}
+
+@media (max-width: 860px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header .logo {
+    width: 80%;
+    margin-left: 0;
+  }
+  header nav {
+    width: 100%;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  header nav ul li {
+    font-size: 1.5rem;
+  }
+  section#bienvenida {
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  section#bienvenida article {
+    padding: 20px 20px;
+  }
+  section#bienvenida h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  section#bienvenida h1 span {
+    font-size: 6vh;
+  }
+  section#bienvenida h3 {
+    font-size: 1.2rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+  section#bienvenida p {
+    font-size: 1.5rem;
+    max-width: 90%;
+    padding: 20px 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

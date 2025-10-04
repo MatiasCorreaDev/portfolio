@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    background-image: url(img/coco16x9.jpeg);
+    background-image: url(../src/assets/img/animacion_pixar/coco16x9.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ marquee {
     width: 350px;
     height: 255px;
     background-color: rgba(255, 255, 255, 0);
-    background-image: url(img/cartel.png);
+    background-image: url(../src/assets/img/animacion_pixar/cartel.png);
     background-size: cover;
     background-position: bottom;
     position: absolute;

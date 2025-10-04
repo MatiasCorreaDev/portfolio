@@ -1,181 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiar a "es" ya que el contenido está en español -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregar metadatos SEO -->
+    <meta name="description" content="Portfolio de Matias Correa - Front End Developer">
+    <meta name="keywords" content="frontend, developer, portfolio, web development">
+    <title>Matias Correa | Front End Developer</title> <!-- Agregar título -->
+    <!-- Optimizar carga de CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/variables.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body id="home">
-    <!--             ESTRELLAS                -->
-    <div class="background">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div> <!--    20 -->
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div> <!--    40 -->
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-    </div>
-
-
+    <!--ESTRELLAS-->
+    <div class="background"></div>
     <nav>
-
-        <p class="textlogonav" id="home">
-            <a href="#home"> <span class="llaves">&#123;</span> MC<br>Dev <span class="llaves">&#125;</span> </a>
-                   </p>
-
-
-        <a href="#anchorsobremi">Sobre Mí</a>
-
-
-        <a href="#proyectos">Proyectos</a>
-        <!-- <a href="#contactame">Contáctame</a> -->
+        <div class="nav-container">
+            <div class="textlogonav" id="home">
+                <a href="#home">
+                    <span class="llaves">&#123;</span>
+                    <span>MC</span>
+                    <span>Dev</span>
+                    <span class="llaves">&#125;</span>
+                </a>
+            </div>
+            
+            <div class="menu_hamburguesa" id="menu_hamburguesa">
+                <i class="bi bi-list" id="iconomenu"></i>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#anchorsobremi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </div>
     </nav>
-
-
-
-
-
-
-
     <header>
         <p class="pheader">Hola 👋🏼, Soy</p>
-
-
         <h1>Matias Correa</h1>
-
-
         <p class="pheader">Front End Developer</p>
-
-
         <div class="contenedorbotonesheader">
-
-
             <a href="#contactame" class="linkboton">
                 <div class="botonheader"><i class="bi bi-envelope-open"></i> Contáctame</div>
             </a>
-
-
-
             <a href="https://www.linkedin.com/in/matias-ezequiel-correa-a14196292/" class="redes" target="_blank"
                 title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-
-
-
             <a href="https://github.com/MatiasCorreaDev" class="redes" target="_blank" title="GitHub"><i
                     class="bi bi-github"></i></a>
-
-
-
             <a href="#" class="linkboton" target="_blank">
                 <div class="botonheader" id="anchorsobremi"><i class="bi bi-download"></i> Descargar CV</div>
             </a>
-
         </div>
-
-
     </header>
 
-
-
-
-
-
-
-
     <main>
-
-
         <div class="linea"></div>
-
-
-
-
-        <h2> <i class="bi bi-code"></i> Sobre Mí <i class="bi bi-code-slash"></i> </h2>
-
-
-
-
-
-
+        <h2><i class="bi bi-code"></i> Sobre Mí <i class="bi bi-code-slash"></i></h2>
         <section class="sobremi" id="sobremi">
-
-
             <div class="fotoperfil" title="Matias Correa"></div>
-
             <p class="psobremi">
                 <span class="spansobremi">Front-End Developer</span>
                 en constante crecimiento. Soy un entusiasta de la tecnología; me encanta el café y, recientemente, he
-                descubierto que me apasiona el
-                mundo de la programación y el desarrollo Web. <br><br>Me considero una persona
-
+                descubierto que me apasiona el mundo de la programación y el desarrollo Web. <br><br>Me considero una
+                persona
                 <span class="spansobremi">responsable, proactiva y comprometida</span>
-
                 con mi trabajo, tanto de forma individual como en equipo. <br><br> Disfruto aprender continuamente:
-                siempre buscando nuevas
-                herramientas y conocimientos que me permitan mejorar mis proyectos y
-
+                siempre buscando nuevas herramientas y conocimientos que me permitan mejorar mis proyectos y
                 <span class="spansobremi">ofrecer soluciones efectivas.</span>
             </p>
-
-
         </section>
 
 
@@ -183,186 +81,135 @@
 
 
         <div class="linea"></div>
-
-
-
-
-
-
-        <h2> <i class="bi bi-code"></i> Habilidades <i class="bi bi-code-slash"></i> </h2>
-
-
-
-        <section class="habilidades">
-            <img src="img/html5.svg" alt="icono html5" class="iconoshabilidades" title="HTML5">
-
-            <img src="img/css3.svg" alt="icono css3" class="iconoshabilidades" title="CSS3">
-
-            <img src="img/javascript-original.svg" alt="icono javascript" class="iconoshabilidades" title="JAVASCRIPT">
-
-            <img src="img/wordpress.svg" alt="icono wordpress" class="iconoshabilidades" title="WORDPRESS">
-
-            <img src="img/git-original.svg" alt="icono git" class="iconoshabilidades" title="GIT">
-
-            <i class="devicon-github-original-wordmark" title="GitHub" id="proyectos"></i>
+        <h2><i class="bi bi-code"></i> Habilidades <i class="bi bi-code-slash"></i></h2>
+        <section class="skills-slider">
+            <div class="slider-track">
+                <!-- Primer grupo de íconos -->
+                <div class="slide">
+                    <img src="src/assets/icons/html5.svg" alt="HTML5" class="iconoshabilidades" title="HTML5">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/css3.svg" alt="CSS3" class="iconoshabilidades" title="CSS3">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/javascript-original.svg" alt="JavaScript" class="iconoshabilidades" title="JAVASCRIPT">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/wordpress.svg" alt="WordPress" class="iconoshabilidades" title="WORDPRESS">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/git-original.svg" alt="Git" class="iconoshabilidades" title="GIT">
+                </div>
+                <div class="slide">
+                    <i class="devicon-github-original-wordmark" title="GitHub"></i>
+                </div>
+                
+                <!-- Duplicado para el efecto infinito -->
+                <div class="slide">
+                    <img src="src/assets/icons/html5.svg" alt="HTML5" class="iconoshabilidades" title="HTML5">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/css3.svg" alt="CSS3" class="iconoshabilidades" title="CSS3">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/javascript-original.svg" alt="JavaScript" class="iconoshabilidades" title="JAVASCRIPT">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/wordpress.svg" alt="WordPress" class="iconoshabilidades" title="WORDPRESS">
+                </div>
+                <div class="slide">
+                    <img src="src/assets/icons/git-original.svg" alt="Git" class="iconoshabilidades" title="GIT">
+                </div>
+                <div class="slide">
+                    <i class="devicon-github-original-wordmark" title="GitHub"></i>
+                </div>
+            </div>
         </section>
-
         <div class="linea"></div>
 
 
-        <!--                    PROYECTOS                      -->
-
-
-        <h2> <i class="bi bi-code"></i> Proyectos <i class="bi bi-code-slash"></i> </h2>
-
-
-
+        <!--PROYECTOS-->
+        <h2><i class="bi bi-code"></i> Proyectos <i class="bi bi-code-slash"></i></h2>
         <section class="contenedorproyectos" id="proyectos">
-
             <!-- ANIMACION PIXAR -->
-
-
             <article class="proyecto" id="animacion_pixar">
-
-                <a href="animacion_pixar/index.html" class="fotolink">
+                <a href="src/proyectos/animacion_pixar/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="proyectococo"></div>
                 </a>
-
-
-
                 <div class="contenedortextosproyecto">
-
                     <h3>Animación Pixar</h3>
-
                     <p class="textoproyectos">Página donde se realiza diferentes usos de animaciones sobre imágenes
-                        y
-                        gifs utilizando HTML5 y CSS3.</p>
-
+                        y gifs utilizando HTML5 y CSS3.</p>
                     <p class="linkdeproyectos">
-
-                        <a href="animacion_pixar/index.html"> <i class="bi bi-link-45deg"></i> </a>
+                        <a href="animacion_pixar/index.html"><i class="bi bi-link-45deg"></i></a>
                         <!-- ICONO LINK A PAGINA -->
-
-
-                        <a href="https://github.com/MatiasCorreaDev/animacion_pixar" target="_blank"> <i
+                        <a href="https://github.com/MatiasCorreaDev/animacion_pixar" target="_blank"><i
                                 class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
-
                     </p>
-
                 </div>
-
-
-
-
             </article>
-
-
-
-
-
             <!-- CANTINA CHICHILO -->
 
-            <article class="proyecto" id="cantina_chichilo" >
-
-                <a href="cantina_chinchillo/index.html" class="fotolink" >
+            <article class="proyecto" id="cantina_chichilo">
+                <a href="src/proyectos/cantina/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="cantinachichilo"></div>
                 </a>
-
                 <div class="contenedortextosproyecto">
-
                     <h3>Cantina Chichilo</h3>
-
                     <p class="textoproyectos">Reestructuración de página Web utilizando conceptos de Flexbox y los
-                        principios de C.R.A.P Design. ( <a href="http://www.cantinachichilo.com.ar/" target="_blank"><i
-                                class="bi bi-link-45deg" id="linkcantina"></i></a> Dirección de la Web
-                        Original).
-                    </p>
-
+                        principios de C.R.A.P Design. (<a href="http://www.cantinachichilo.com.ar/" target="_blank"><i
+                                class="bi bi-link-45deg" id="linkcantina"></i></a> Dirección de la Web Original).</p>
                     <p class="linkdeproyectos">
-
-                        <a href="cantina_chinchillo/index.html" > <i class="bi bi-link-45deg"></i>
+                        <a href="cantina_chinchillo/index.html"><i class="bi bi-link-45deg"></i>
                             <!-- ICONO LINK A PAGINA -->
                         </a>
-
-                        <a href="https://github.com/MatiasCorreaDev/cantina_chichilo" target="_blank"> <i
+                        <a href="https://github.com/MatiasCorreaDev/cantina_chichilo" target="_blank"><i
                                 class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
-
                     </p>
                 </div>
-
-
             </article>
-
             <!-- NOTICIAS MONSTRUOSAS -->
-
             <article class="proyecto" id="noticias_monstruosas">
-
-                <a href="noticiasmonstruosas/index.html" class="fotolink">
+                <a href="src/proyectos/noticias/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="noticiasmonstruosas"></div>
                 </a>
-
                 <div class="contenedortextosproyecto">
-
                     <h3>Noticias Monstruosas</h3>
-
                     <p class="textoproyectos">Semanario web de noticias tecnológicas, personajes frikis y
                         monstruosidades fictícias.</p>
-
                     <p class="linkdeproyectos">
-
-                        <a href="noticiasmonstruosas/index.html"> <i class="bi bi-link-45deg"> </i> </a>
+                        <a href="noticiasmonstruosas/index.html"><i class="bi bi-link-45deg"></i></a>
                         <!-- ICONO LINK A PAGINA -->
-
-                        <a href="#" target="_blank"> <i class="bi bi-github" id="githubiconproyecto"></i></a>
+                        <a href="#" target="_blank"><i class="bi bi-github" id="githubiconproyecto"></i></a>
                         <!-- ICONO LINK GITHUB -->
-
                     </p>
                 </div>
-
             </article>
-
             <!-- PELUQUERIA CANINA -->
             <article class="proyecto" id="proyecto_peluqueria">
-
-                <a href="Peluqueria_Canina/index.html" class="fotolink">
+                <a href="src/proyectos/peluqueria/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="proyectopeluqueria"></div>
                 </a>
-
-
-
                 <div class="contenedortextosproyecto">
-
                     <h3>Peluqueria Canina Camila Correa</h3>
-
-                    <p class="textoproyectos">Creación de página Web para un comercio local del sector Peluquería Canina</p>
-
-                    <p class="linkdeproyectos">
-
-                        <a href="Peluqueria_Canina/index.html"> <i class="bi bi-link-45deg"></i> </a>
-                        <!-- ICONO LINK A PAGINA -->
-
-
-                        <a href="https://github.com/MatiasCorreaDev/Peluqueria_Canina" target="_blank"> <i
-                                class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
-
+                    <p class="textoproyectos">Creación de página Web para un comercio local del sector Peluquería Canina
                     </p>
-
+                    <p class="linkdeproyectos">
+                        <a href="Peluqueria_Canina/index.html"><i class="bi bi-link-45deg"></i></a>
+                        <!-- ICONO LINK A PAGINA -->
+                        <a href="https://github.com/MatiasCorreaDev/Peluqueria_Canina" target="_blank"><i
+                                class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
+                    </p>
                 </div>
-
+            </article>
         </section>
 
 
 
 
 
-
         <div class="linea"></div>
-
-
-        <!--      CONTACTAME          -->
-
-
-
+        <!--CONTACTAME-->
         <h2> <i class="bi bi-code"></i> Contáctame <i class="bi bi-code-slash" id="githubiconproyecto"></i> </h2>
 
         <section class="contactame" id="contactame">
@@ -393,14 +240,14 @@
             </ul>
 
         </section>
-
         <div class="linea"></div>
-
         <footer>
-            <p class="footer">&copy; 2025 Matias Correa Dev </p>
+            <p class="texto_pie">&copy; 2025 Matias Correa Dev</p>
         </footer>
-
     </main>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/nav.js"></script>
 </body>
 
 </html>
