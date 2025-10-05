@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /src/
+Allow: /src/proyectos/
+Disallow: /src/assets/
+Sitemap: https://matiascorreadev.github.io/portfolio/sitemap.xml
+
+# Crawl-delay: 10

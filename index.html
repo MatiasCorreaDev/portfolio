@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Cambiar a "es" ya que el contenido está en español -->
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Agregar metadatos SEO -->
     <meta name="description" content="Portfolio de Matias Correa - Front End Developer">
     <meta name="keywords" content="frontend, developer, portfolio, web development">
-    <title>Matias Correa | Front End Developer</title> <!-- Agregar título -->
-    <!-- Optimizar carga de CSS -->
+    <title>Matias Correa | Front End Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="src/styles/main.css">
-    <link rel="stylesheet" href="src/styles/variables.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
-<body id="home">
-    <!--ESTRELLAS-->
-    <div class="background"></div>
+<body id="inicio">
+    <div class="fondo"></div>
     <nav>
-        <div class="nav-container">
-            <div class="textlogonav" id="home">
-                <a href="#home">
+        <div class="contenedor-nav">
+            <div class="textlogonav" id="inicio">
+                <a href="#inicio">
                     <span class="llaves">&#123;</span>
                     <span>MC</span>
                     <span>Dev</span>
                     <span class="llaves">&#125;</span>
                 </a>
             </div>
-            
+
             <div class="menu_hamburguesa" id="menu_hamburguesa">
                 <i class="bi bi-list" id="iconomenu"></i>
             </div>
-            
-            <ul class="nav-links">
+
+            <ul class="enlaces-nav">
                 <li><a href="#anchorsobremi">Sobre Mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contactame">Contáctame</a></li>
@@ -82,56 +75,115 @@
 
         <div class="linea"></div>
         <h2><i class="bi bi-code"></i> Habilidades <i class="bi bi-code-slash"></i></h2>
-        <section class="skills-slider">
-            <div class="slider-track">
-                <!-- Primer grupo de íconos -->
-                <div class="slide">
-                    <img src="src/assets/icons/html5.svg" alt="HTML5" class="iconoshabilidades" title="HTML5">
+        <section class="contenedor-habilidades">
+            <div class="categoria-habilidades">
+                <h3>Desarrollo Frontend</h3>
+                <div class="grilla-habilidades">
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/html5.svg" alt="HTML5" class="icono-habilidad">
+                            <span class="nombre-habilidad">HTML5</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 90%"></div>
+                            </div>
+                            <span class="texto-nivel">Avanzado</span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/css3.svg" alt="CSS3" class="icono-habilidad">
+                            <span class="nombre-habilidad">CSS3</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 85%"></div>
+                            </div>
+                            <span class="texto-nivel">Avanzado</span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/javascript-original.svg" alt="JavaScript" class="icono-habilidad">
+                            <span class="nombre-habilidad">JavaScript</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 65%"></div>
+                            </div>
+                            <span class="texto-nivel">Intermedio</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="src/assets/icons/css3.svg" alt="CSS3" class="iconoshabilidades" title="CSS3">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/javascript-original.svg" alt="JavaScript" class="iconoshabilidades" title="JAVASCRIPT">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/wordpress.svg" alt="WordPress" class="iconoshabilidades" title="WORDPRESS">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/git-original.svg" alt="Git" class="iconoshabilidades" title="GIT">
-                </div>
-                <div class="slide">
-                    <i class="devicon-github-original-wordmark" title="GitHub"></i>
-                </div>
-                
-                <!-- Duplicado para el efecto infinito -->
-                <div class="slide">
-                    <img src="src/assets/icons/html5.svg" alt="HTML5" class="iconoshabilidades" title="HTML5">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/css3.svg" alt="CSS3" class="iconoshabilidades" title="CSS3">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/javascript-original.svg" alt="JavaScript" class="iconoshabilidades" title="JAVASCRIPT">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/wordpress.svg" alt="WordPress" class="iconoshabilidades" title="WORDPRESS">
-                </div>
-                <div class="slide">
-                    <img src="src/assets/icons/git-original.svg" alt="Git" class="iconoshabilidades" title="GIT">
-                </div>
-                <div class="slide">
-                    <i class="devicon-github-original-wordmark" title="GitHub"></i>
+            </div>
+
+            <div class="categoria-habilidades">
+                <h3>Herramientas y CMS</h3>
+                <div class="grilla-habilidades">
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/wordpress.svg" alt="WordPress" class="icono-habilidad">
+                            <span class="nombre-habilidad">WordPress</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 60%"></div>
+                            </div>
+                            <span class="texto-nivel">Intermedio</span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/git-original.svg" alt="Git" class="icono-habilidad">
+                            <span class="nombre-habilidad">Git</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 70%"></div>
+                            </div>
+                            <span class="texto-nivel">Intermedio</span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta-habilidad">
+                        <div class="cabecera-habilidad">
+                            <img src="src/assets/icons/github-original.svg" alt="GitHub" class="icono-habilidad">
+                            <span class="nombre-habilidad">GitHub</span>
+                        </div>
+                        <div class="nivel-habilidad">
+                            <div class="barra-progreso">
+                                <div class="progreso" style="width: 70%"></div>
+                            </div>
+                            <span class="texto-nivel">Intermedio</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="linea"></div>
 
 
-        <!--PROYECTOS-->
         <h2><i class="bi bi-code"></i> Proyectos <i class="bi bi-code-slash"></i></h2>
         <section class="contenedorproyectos" id="proyectos">
-            <!-- ANIMACION PIXAR -->
+            <article class="proyecto" id="proyecto_peluqueria">
+                <a href="src/proyectos/peluqueria/index.html" class="fotolink">
+                    <div class="contenedorimgproyecto" id="proyectopeluqueria"></div>
+                </a>
+                <div class="contenedortextosproyecto">
+                    <h3>Peluqueria Canina Camila Correa</h3>
+                    <p class="textoproyectos">Creación de página Web para un comercio local del sector Peluquería Canina</p>
+                    <p class="linkdeproyectos">
+                        <a href="Peluqueria_Canina/index.html"><i class="bi bi-link-45deg"></i></a>
+                        <a href="https://github.com/MatiasCorreaDev/Peluqueria_Canina" target="_blank"><i
+                                class="bi bi-github"></i></a>
+                    </p>
+                </div>
+            </article>
+
             <article class="proyecto" id="animacion_pixar">
                 <a href="src/proyectos/animacion_pixar/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="proyectococo"></div>
@@ -142,13 +194,11 @@
                         y gifs utilizando HTML5 y CSS3.</p>
                     <p class="linkdeproyectos">
                         <a href="animacion_pixar/index.html"><i class="bi bi-link-45deg"></i></a>
-                        <!-- ICONO LINK A PAGINA -->
                         <a href="https://github.com/MatiasCorreaDev/animacion_pixar" target="_blank"><i
-                                class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
+                                class="bi bi-github"></i></a>
                     </p>
                 </div>
             </article>
-            <!-- CANTINA CHICHILO -->
 
             <article class="proyecto" id="cantina_chichilo">
                 <a href="src/proyectos/cantina/index.html" class="fotolink">
@@ -160,15 +210,13 @@
                         principios de C.R.A.P Design. (<a href="http://www.cantinachichilo.com.ar/" target="_blank"><i
                                 class="bi bi-link-45deg" id="linkcantina"></i></a> Dirección de la Web Original).</p>
                     <p class="linkdeproyectos">
-                        <a href="cantina_chinchillo/index.html"><i class="bi bi-link-45deg"></i>
-                            <!-- ICONO LINK A PAGINA -->
-                        </a>
+                        <a href="cantina_chinchillo/index.html"><i class="bi bi-link-45deg"></i></a>
                         <a href="https://github.com/MatiasCorreaDev/cantina_chichilo" target="_blank"><i
-                                class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
+                                class="bi bi-github"></i></a>
                     </p>
                 </div>
             </article>
-            <!-- NOTICIAS MONSTRUOSAS -->
+
             <article class="proyecto" id="noticias_monstruosas">
                 <a href="src/proyectos/noticias/index.html" class="fotolink">
                     <div class="contenedorimgproyecto" id="noticiasmonstruosas"></div>
@@ -179,67 +227,67 @@
                         monstruosidades fictícias.</p>
                     <p class="linkdeproyectos">
                         <a href="noticiasmonstruosas/index.html"><i class="bi bi-link-45deg"></i></a>
-                        <!-- ICONO LINK A PAGINA -->
-                        <a href="#" target="_blank"><i class="bi bi-github" id="githubiconproyecto"></i></a>
-                        <!-- ICONO LINK GITHUB -->
-                    </p>
-                </div>
-            </article>
-            <!-- PELUQUERIA CANINA -->
-            <article class="proyecto" id="proyecto_peluqueria">
-                <a href="src/proyectos/peluqueria/index.html" class="fotolink">
-                    <div class="contenedorimgproyecto" id="proyectopeluqueria"></div>
-                </a>
-                <div class="contenedortextosproyecto">
-                    <h3>Peluqueria Canina Camila Correa</h3>
-                    <p class="textoproyectos">Creación de página Web para un comercio local del sector Peluquería Canina
-                    </p>
-                    <p class="linkdeproyectos">
-                        <a href="Peluqueria_Canina/index.html"><i class="bi bi-link-45deg"></i></a>
-                        <!-- ICONO LINK A PAGINA -->
-                        <a href="https://github.com/MatiasCorreaDev/Peluqueria_Canina" target="_blank"><i
-                                class="bi bi-github" id="githubiconproyecto"></i></a> <!-- ICONO LINK GITHUB -->
+                        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
                     </p>
                 </div>
             </article>
         </section>
 
-
-
-
+        <div class="linea"></div>
+        <h2><i class="bi bi-code"></i> Formación <i class="bi bi-code-slash"></i></h2>
+        <section class="formacion" id="formacion">
+            <p class="pformacion">
+                - Confección y Publicación de Páginas Web <span class="spanformacion">Cet Penedès</span> (2025) <br>
+                - Curso de Marketing en buscadores: SEO, SEM y analítica Web - <span class="spanformacion">Cet
+                    Penedès</span> (2025) <br>
+                - Curso de Iniciación al Desarrollo con IA - <span class="spanformacion">Big School</span> (2025) <br>
+                - Curso de Catalán Basic 1 - <span class="spanformacion">CPNL</span> (2023) <br>
+                - Bachiller en Ciencias Económicas - <span class="spanformacion">Instituto "La Merced"</span> (2010)
+                <br>
+            </p>
+        </section>
 
         <div class="linea"></div>
-        <!--CONTACTAME-->
-        <h2> <i class="bi bi-code"></i> Contáctame <i class="bi bi-code-slash" id="githubiconproyecto"></i> </h2>
+        <h2><i class="bi bi-code"></i> Contáctame <i class="bi bi-code-slash"></i></h2>
 
         <section class="contactame" id="contactame">
             <p class="pcontactame">
-                Si tienes alguna idea, proyecto o simplemente una consulta, ¡me encantaría saber de ti! No dudes en
-                contactarme, siempre estoy abierto a nuevas oportunidades.
+                Si tienes alguna idea, proyecto o simplemente una consulta, no dudes en
+                contactarme, siempre estoy abierto a nuevas oportunidades. ¡Me encantaría saber de ti!
             </p>
 
 
+
             <ul class="listcontactame">
-
-
                 <li><a href="mailto:matias.correa.dev@gmail.com"><i class="bi bi-envelope-check"></i>
                         matias.correa.dev@gmail.com </a>
                 </li>
 
-
-
-                <li><a href="tel:+34611178962"><i class="bi bi-whatsapp"></i> +34 611 17 89 62 </a> </li>
-
-
-
-                <li><a href="https://www.linkedin.com/in/matias-ezequiel-correa-a14196292/" class="contactoicons"
+                <li><a href="https://www.linkedin.com/in/matias-ezequiel-correa-a14196292/" class="iconos-contacto"
                         target="_blank" title="LinkedIn"><i class="bi bi-linkedin" id="iconlinkedin"></i> Matias
                         Ezequiel Correa</a>
                 </li>
-
             </ul>
-
         </section>
+
+        <form class="formulario-contacto" action="https://formsubmit.co/d888292ad43e96b74ae886ef51872d4b" method="POST"
+            id="formularioContacto">
+            <div class="grupo-formulario">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="grupo-formulario">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="grupo-formulario">
+                <textarea id="mensaje" name="mensaje" placeholder="Déjame un mensaje, te responderé a la brevedad."
+                    required></textarea>
+            </div>
+            <button type="submit" class="boton-enviar">Enviar mensaje <i class="bi bi-send"></i></button>
+            <div class="mensaje-exito" id="mensajeExito">
+                <i class="bi bi-check-circle"></i>
+                ¡Mensaje enviado correctamente!
+            </div>
+        </form>
         <div class="linea"></div>
         <footer>
             <p class="texto_pie">&copy; 2025 Matias Correa Dev</p>
@@ -248,6 +296,7 @@
 
     <script src="src/js/main.js"></script>
     <script src="src/js/nav.js"></script>
+    <script src="src/js/form.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 // =========================
 
 const cantidad_estrellas = 100; // Número total de estrellas
-const fondo = document.querySelector('.background'); // Contenedor del fondo
+const fondo = document.querySelector('.fondo'); // Contenedor del fondo
 const estrellas = []; // Array para almacenar las estrellas
 const velocidades = []; // Array para almacenar velocidades de cada estrella
 let mouse_x = 0.5; // Posición X del mouse normalizada
