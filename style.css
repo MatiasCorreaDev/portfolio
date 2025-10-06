@@ -265,7 +265,7 @@ header {
 h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(60px, 10vw, 140px);
-  background: linear-gradient(90deg, #FF5F6D 0%, #FFC371 20%, #47CACC 40%, #7D5FFF 60%, #43E97B 80%, #38F9D7 100%);
+  background: linear-gradient(90deg, #bbf7ff 0%, #9ff098 20%, #e1e289 40%, #69bbe0 60%, #9892e9 80%, #b08ceb 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -338,14 +338,23 @@ section {
 
 
 .sobremi {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.fotoperfil {
+  float: left;
+  margin: 80px 30px 20px 0;
+  shape-outside: margin-box;
 }
 
 .psobremi {
-  width: 50%;
   font-size: x-large;
+  line-height: 1.6;
+  text-align: justify;
+  overflow: hidden;
 }
 
 .introduccion-centrada {
@@ -910,17 +919,21 @@ footer {
   }
 
   .sobremi {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .psobremi {
-    width: 100%;
-    font-size: large;
+    text-align: center;
+    padding: 0 15px;
   }
 
   .fotoperfil {
-    justify-content: center;
+    float: none;
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 200px;
+    height: 320px;
+  }
+
+  .psobremi {
+    font-size: large;
+    text-align: justify;
   }
 
   .proyecto {
@@ -1049,13 +1062,25 @@ footer {
   }
 }
 
-.sobremi {
-  flex-direction: column;
-  gap: 20px;
-}
+/* Media query adicional para pantallas medianas */
+@media screen and (max-width: 768px) {
+  .sobremi {
+    text-align: center;
+    padding: 0 15px;
+  }
 
-.psobremi {
-  width: 80%;
+  .fotoperfil {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 180px;
+    height: 280px;
+  }
+
+  .psobremi {
+    font-size: medium;
+    text-align: justify;
+  }
 
   .contactame {
     flex-direction: column;
