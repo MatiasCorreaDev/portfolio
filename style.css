@@ -272,6 +272,7 @@ h1 {
   color: transparent;
   text-align: center;
   margin: 20px 0;
+  letter-spacing: 0.15em;
 }
 
 .pheader {
@@ -348,6 +349,12 @@ section {
   font-size: x-large;
 }
 
+.introduccion-centrada {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 .spansobremi {
   color: #1c939e;
   font-weight: bold;
@@ -381,9 +388,6 @@ section {
     transition: transform 0.3s ease;
 }
 
-.categoria-habilidades:hover {
-    transform: translateY(-5px);
-}
 
 .categoria-habilidades h3 {
     color: #eefdfc;
@@ -591,10 +595,6 @@ a {
     transition: transform 0.3s ease;
 }
 
-.formacion:hover {
-    transform: translateY(-5px);
-}
-
 .pformacion {
     font-size: x-large;
     line-height: 2;
@@ -665,7 +665,6 @@ li>a:hover {
   color: #3ad3d6;
 }
 
-
 .formulario-contacto {
   width: 100%;
   max-width: 600px;
@@ -678,10 +677,6 @@ li>a:hover {
   position: relative;
   z-index: 2;
   transition: transform 0.3s ease;
-}
-
-.formulario-contacto:hover {
-  transform: translateY(-5px);
 }
 
 .grupo-formulario {
@@ -829,9 +824,6 @@ footer {
     max-width: 800px;
   }
 
-  .proyecto:hover {
-    transform: translateY(-10px);
-  }
 
   .contenedorimgproyecto {
     width: 100%;
@@ -882,7 +874,7 @@ footer {
     padding: 80px 15px 20px;
 
     h1 {
-      font-size: 80px;
+      font-size: 80px;      
     }
 
     .pheader {
@@ -1148,9 +1140,6 @@ a.fotolink {
     padding-bottom: 80px; /* Espacio para los enlaces */
   }
 
-  .proyecto:hover {
-    transform: translateY(-10px);
-  }
 
   .contenedorimgproyecto {
     width: 100%;
