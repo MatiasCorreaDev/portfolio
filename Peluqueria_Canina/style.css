@@ -797,7 +797,7 @@ body footer p {
   body header {
     flex-direction: column;
     height: 90px;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
   }

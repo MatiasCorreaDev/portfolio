@@ -965,7 +965,7 @@ body {
     body header {
         flex-direction: column;
         height: 90px;
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
     }
@@ -985,7 +985,6 @@ body {
     // *Ajustes Bienvenida
     body main section#bienvenida article {
         padding-top: 100px;
-        ;
     }
 
     body main section#bienvenida article p {
