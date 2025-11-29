@@ -248,9 +248,6 @@ body main .section-servicios {
   height: fit-content;
   position: relative;
   padding: 20px 0;
-  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/conjunto-de-comida-para-perros-y-cuello-removebg-preview.png") center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body main .section-servicios h2 {
   font-family: "trifelia", serif;
@@ -352,9 +349,6 @@ body main .section-servicios article#servicios .contenedor-servicios .tarjeta .t
 }
 body main section#sobre-nosotros {
   height: auto;
-  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/terry.png") center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body main section#sobre-nosotros h2 {
   font-family: "trifelia", serif;
@@ -510,9 +504,6 @@ body main section#contacto {
   width: 100%;
   height: auto;
   padding: 20px 0;
-  background: linear-gradient(to bottom, transparent, rgba(245, 245, 220, 0.555)), url(Recursos/imagenes/lindo-concepto-naturaleza-muerta-accesorios-mascotas.png) center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body main section#contacto h2 {
   font-family: "trifelia", serif;
@@ -923,4 +914,29 @@ body footer p {
     width: 100%;
     align-items: center;
   }
+}
+.textoregreso {
+  position: fixed;
+  top: 15%;
+  left: 15px;
+  border-radius: 50%;
+  background: #082359;
+  background: radial-gradient(circle, rgb(8, 35, 89) 22%, rgb(148, 187, 233) 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 2px solid rgb(187, 187, 209);
+}
+.textoregreso .volver {
+  text-indent: 0;
+  font-size: medium;
+  color: white;
+}
+
+.textoregreso:hover {
+  scale: 120%;
+  transition: 1s;
 }/*# sourceMappingURL=style.css.map */
