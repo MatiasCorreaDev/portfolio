@@ -178,7 +178,6 @@ body main section#bienvenida {
 }
 body main section#bienvenida article {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -806,6 +805,9 @@ body footer p {
   body header .logo {
     width: 100%;
     margin-left: 0;
+  }
+  body main section#bienvenida article {
+    padding-top: 100px;
   }
   body main section#bienvenida h1 {
     font-size: 2em;
