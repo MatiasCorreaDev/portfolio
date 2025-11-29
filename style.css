@@ -543,6 +543,10 @@ img[src*="github-original.svg"].icono-habilidad {
 
 #linkcantina {
   font-size: 24px;
+  color: white;
+}
+#linkcantina:hover {
+  color: #78e7e8;
 }
 
 .linkdeproyectos a i {
@@ -551,7 +555,7 @@ img[src*="github-original.svg"].icono-habilidad {
   text-decoration: none;
 }
 
-.linkdeproyectos a i:hover {
+.linkdeproyectos a i:hover{
   color: #78e7e8;
 }
 
