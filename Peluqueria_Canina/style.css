@@ -809,6 +809,10 @@ body footer p {
   body main section#bienvenida article {
     padding-top: 100px;
   }
+  body main section#bienvenida article p {
+    font-size: 1.2rem;
+    margin: 10px 20px;
+  }
   body main section#bienvenida h1 {
     font-size: 2em;
     margin-bottom: 15px;
