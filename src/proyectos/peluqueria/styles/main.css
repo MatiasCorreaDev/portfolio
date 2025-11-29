@@ -5,15 +5,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Hurricane&display=swap");
 @font-face {
   font-family: trifelia;
-  src: url(../assets/resources/fuentes/Trifelia.otf) format("opentype");
+  src: url(Recursos/fuentes/Trifelia.otf) format("opentype");
 }
 @font-face {
   font-family: anandaBlackPersonalUse;
-  src: url(../assets/resources/fuentes/Ananda\ Black\ Personal\ Use.ttf) format("truetype");
+  src: url(Recursos/fuentes/Ananda\ Black\ Personal\ Use.ttf) format("truetype");
 }
 @font-face {
   font-family: anandaPersonalUse;
-  src: url(../assets/resources/fuentes/Ananda\ Personal\ Use.ttf) format("truetype");
+  src: url(Recursos/fuentes/Ananda\ Personal\ Use.ttf) format("truetype");
 }
 /* *Fuente Nav */
 /* *Fuente Bienvenida */
@@ -62,7 +62,7 @@ body header .logo-link {
 body header .logo-link .logo {
   width: 100%;
   height: 100%;
-  background: url(../assets/resources/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
+  background: url(Recursos/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
   background-size: contain;
 }
 body header nav.menu-horizontal {
@@ -169,7 +169,7 @@ body main section#bienvenida {
   height: 100vh;
   position: relative;
   /* *solo imagen de fondo de Bienvenida */
-  background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(../assets/resources/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
+  background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -248,7 +248,7 @@ body main .section-servicios {
   height: fit-content;
   position: relative;
   padding: 20px 0;
-  background: linear-gradient(to bottom, transparent, transparent), url("../assets/resources/imagenes/conjunto-de-comida-para-perros-y-cuello-removebg-preview.png") center center no-repeat;
+  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/conjunto-de-comida-para-perros-y-cuello-removebg-preview.png") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -319,7 +319,7 @@ body main .section-servicios article#servicios .contenedor-servicios .tarjeta .t
   padding: 15px 5px;
   justify-content: center;
   border: inset solid #000000;
-  background: linear-gradient(to top, rgba(5, 5, 5, 0.7960784314), #ffbecf), url(../assets/resources/imagenes/job562-nunoon-10-removebg-preview.png) no-repeat center center;
+  background: linear-gradient(to top, rgba(5, 5, 5, 0.7960784314), #ffbecf), url(Recursos/imagenes/job562-nunoon-10-removebg-preview.png) no-repeat center center;
   background-size: cover;
   background-blend-mode: overlay;
 }
@@ -340,7 +340,7 @@ body main .section-servicios article#servicios .contenedor-servicios .tarjeta .t
 }
 body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back {
   transform: rotateY(180deg);
-  background: linear-gradient(to bottom, rgba(59, 54, 54, 0.4509803922), rgba(59, 54, 54, 0.4509803922)), url(../assets/resources/imagenes/45.webp) no-repeat center center;
+  background: linear-gradient(to bottom, rgba(59, 54, 54, 0.4509803922), rgba(59, 54, 54, 0.4509803922)), url(Recursos/imagenes/45.webp) no-repeat center center;
   background-size: cover;
 }
 body main .section-servicios article#servicios .contenedor-servicios .tarjeta .tarjeta-back p {
@@ -352,7 +352,7 @@ body main .section-servicios article#servicios .contenedor-servicios .tarjeta .t
 }
 body main section#sobre-nosotros {
   height: auto;
-  background: linear-gradient(to bottom, transparent, transparent), url("../assets/resources/imagenes/terry.png") center center no-repeat;
+  background: linear-gradient(to bottom, transparent, transparent), url("Recursos/imagenes/terry.png") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -459,7 +459,7 @@ body main section#galeria .galeria-grid div:hover p {
 body main section#galeria .galeria-grid .foto1 {
   grid-column: span 2/span 2;
   grid-row: span 3/span 3;
-  background: url(../assets/resources/imagenes/45.webp) no-repeat center center;
+  background: url(Recursos/imagenes/45.webp) no-repeat center center;
   background-size: cover;
 }
 body main section#galeria .galeria-grid .foto2 {
@@ -467,21 +467,21 @@ body main section#galeria .galeria-grid .foto2 {
   grid-column-start: 1;
   grid-row-start: 4;
   background-size: contain;
-  background: url(../assets/resources/imagenes/1.jpg) no-repeat center center;
+  background: url(Recursos/imagenes/1.jpg) no-repeat center center;
 }
 body main section#galeria .galeria-grid .foto3 {
   grid-column: span 2/span 2;
   grid-row: span 3/span 3;
   grid-column-start: 3;
   grid-row-start: 1;
-  background: url(../assets/resources/imagenes/3.jpg) no-repeat top center;
+  background: url(Recursos/imagenes/3.jpg) no-repeat top center;
   background-size: cover;
 }
 body main section#galeria .galeria-grid .foto4 {
   grid-row: span 2/span 2;
   grid-column-start: 5;
   grid-row-start: 1;
-  background: url(../assets/resources/imagenes/6.jpg) no-repeat top center;
+  background: url(Recursos/imagenes/6.jpg) no-repeat top center;
   background-size: cover;
 }
 body main section#galeria .galeria-grid .foto5 {
@@ -489,28 +489,28 @@ body main section#galeria .galeria-grid .foto5 {
   grid-row: span 2/span 2;
   grid-column-start: 2;
   grid-row-start: 4;
-  background: url(../assets/resources/imagenes/2.jpg) no-repeat top center;
+  background: url(Recursos/imagenes/2.jpg) no-repeat top center;
   background-size: cover;
 }
 body main section#galeria .galeria-grid .foto6 {
   grid-row: span 2/span 2;
   grid-column-start: 4;
   grid-row-start: 4;
-  background: url(../assets/resources/imagenes/5.jpg) no-repeat top center;
+  background: url(Recursos/imagenes/5.jpg) no-repeat top center;
   background-size: cover;
 }
 body main section#galeria .galeria-grid .foto7 {
   grid-row: span 3/span 3;
   grid-column-start: 5;
   grid-row-start: 3;
-  background: url(../assets/resources/imagenes/7.jpg) no-repeat center center;
+  background: url(Recursos/imagenes/7.jpg) no-repeat center center;
   background-size: cover;
 }
 body main section#contacto {
   width: 100%;
   height: auto;
   padding: 20px 0;
-  background: linear-gradient(to bottom, transparent, rgba(245, 245, 220, 0.555)), url(../assets/resources/imagenes/lindo-concepto-naturaleza-muerta-accesorios-mascotas.png) center center no-repeat;
+  background: linear-gradient(to bottom, transparent, rgba(245, 245, 220, 0.555)), url(Recursos/imagenes/lindo-concepto-naturaleza-muerta-accesorios-mascotas.png) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -691,7 +691,7 @@ body footer {
   padding: 20px;
   border-top: 2px solid #dfa4a3;
   box-shadow: 0 -4px 12px rgba(48, 84, 123, 0.3254901961);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5215686275), rgba(255, 255, 255, 0.5215686275)), url("../assets/resources/imagenes/patron-aseo-mascotas-dibujado-mano.png") center top no-repeat;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5215686275), rgba(255, 255, 255, 0.5215686275)), url("Recursos/imagenes/patron-aseo-mascotas-dibujado-mano.png") center top no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -716,7 +716,7 @@ body footer header.encabezado-footer .logo-link {
 body footer header.encabezado-footer .logo-link .logo {
   width: 100%;
   height: 100%;
-  background: url(../assets/resources/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
+  background: url(Recursos/imagenes/LOGO\ PELUQUERIA\ CANINA.png) no-repeat center center;
   background-size: contain;
 }
 body footer header.encabezado-footer nav {
@@ -923,4 +923,4 @@ body footer p {
     width: 100%;
     align-items: center;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
