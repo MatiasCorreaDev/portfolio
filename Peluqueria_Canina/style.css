@@ -169,7 +169,7 @@ body main section#bienvenida {
   height: 100vh;
   position: relative;
   /* *solo imagen de fondo de Bienvenida */
-  background: linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.568)), linear-gradient(to bottom, transparent, rgba(167, 134, 223, 0.5137254902)), url(Recursos/imagenes/seccionBienvenidaImg.jpg) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -187,7 +187,6 @@ body main section#bienvenida article {
   color: beige;
   font-family: "Domine", serif;
   font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.568);
 }
 body main section#bienvenida h1 {
   font-size: 2.5em;
@@ -805,6 +804,10 @@ body footer p {
   body header .logo {
     width: 100%;
     margin-left: 0;
+  }
+  body main h2 {
+    font-size: 2.7em;
+    padding: 10px;
   }
   body main section#bienvenida article {
     padding-top: 100px;
